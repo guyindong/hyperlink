@@ -8,46 +8,21 @@
 <body>
 	<script>
 		window.onload = function () {
-			const title = "自用静态超链接服务（无跨域限制）"
+			const title = "静态超链接服务（无跨域限制）"
 			// 如有增删改，只需更新 context 即可
 			const list = [
 				{
 					title: "图片",
 					type: "img",
 					context: [
-						"vue-pure-admin/1.jpg",
-						"vue-pure-admin/2.jpg",
-						"vue-pure-admin/3.jpg",
-						"vue-pure-admin/4.jpg",
-						"vue-pure-admin/5.jpg",
 						"巴旦木.jpeg",
 						"恭喜发财.png",
-						"docker-desktop.jpg",
-						"echarts-advanceddemo1-1.png",
-						"echarts-advanceddemo1-2.png",
-						"echarts-advanceddemo1-3.png",
-						"echarts-advanceddemo3-1.png",
-						"echarts-advanceddemo3-2.png",
-						"echarts-advanceddemo3-3.png",
-						"echarts-geo.jpg",
-						"echarts-wordcloud.png",
-						"esmjs-geo.png",
-						"namespace.jpg",
-						"pure.png",
-						"pureadmin-descriptions.png",
-						"pureadmin-table.png",
-						"pureadmin-utils.png",
-						"pureClih.jpg",
-						"pureCliv.jpg",
-						"react.png",
-						"vue.png",
-						"vuerouter.jpg"
 					],
 				},
 				{
 					title: "GIF",
 					type: "gif",
-					context: ["pure-admin-cli.gif", "可爱动物.gif"],
+					context: ["可爱动物.gif"],
 				},
 				{
 					title: "SVG",
@@ -57,7 +32,7 @@
 				{
 					title: "音频（点开会自动播放，建议提前调低音量）",
 					type: "audio",
-					context: ["光辉岁月.mp3", "海阔天空.mp3"],
+					context: ["光辉岁月.mp3"],
 				},
 				{
 					title: "PDF",
@@ -79,7 +54,7 @@
 			document.title = title
 
 			const ta = document.createElement("a")
-			ta.href = "https://github.com/xiaoxian521/hyperlink"
+			ta.href = "https://github.com/guyindong/hyperlink"
 			ta.title = "查看源码"
 			ta.target = "_blank"
 			ta.textContent = title
